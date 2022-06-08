@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>What is the likelihood? &#8212; Introduction to neutron reflectometry fitting</title>
+    <title>What is the likelihood? &#8212; A Guide to Reflectometry</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="How do we maximise the likelihood?" href="how_do_we_maximise_the_likelihood.html" />
@@ -99,7 +101,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="../_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Introduction to neutron reflectometry fitting</h1>
+      <h1 class="site-logo" id="site-title">A Guide to Reflectometry</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -111,7 +113,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Introduction to neutron reflectometry fitting
+                    A Guide to Reflectometry
                 </a>
             </li>
         </ul>
@@ -153,6 +155,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../3_reflectometry_slab_models/the_slab_model.html">
    The “slab model”
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../3_reflectometry_slab_models/optical_parameters_for_neutrons_and_xrays.html">
+   Optical parameters for neutrons and x-rays
   </a>
  </li>
  <li class="toctree-l1">
@@ -268,7 +275,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/reflectivity/isis_school/main?urlpath=tree/docs/5_fitting_processes_and_problems/what_is_the_likelihood.ipynb"
+        <a href="https://mybinder.org/v2/gh/reflectivity/learn/main?urlpath=tree/docs/5_fitting_processes_and_problems/what_is_the_likelihood.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -311,7 +318,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/reflectivity/isis_school"
+        <a href="https://github.com/reflectivity/learn"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -328,7 +335,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/reflectivity/isis_school/issues/new?title=Issue%20on%20page%20%2F5_fitting_processes_and_problems/what_is_the_likelihood.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/reflectivity/learn/issues/new?title=Issue%20on%20page%20%2F5_fitting_processes_and_problems/what_is_the_likelihood.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
